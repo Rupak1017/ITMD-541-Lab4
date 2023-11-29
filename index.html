@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <img src="images/sunnn.webp" alt="" width="5%" height="5%">
+    <h2>ITMD 541 - Lab 4 - Rupak</h2>
+		
+    </nav>
+		
+    <h1>Sunrise Sunset io</h1>
+        <button id="geolocationBtn">Use Current Location</button>
+        <div id="searchRow">
+            <input type="text" id="locationSearch" placeholder="Search for a location">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="dashboard">
+            <!-- Today's Data -->
+            <div id="today">
+                <h2>Today</h2>
+                <p id="dateToday"></p>
+        
+                <div class="sun-data">
+                    <div>
+                        <h3>Sunrise</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunrise.svg" alt="Graphic: sunrise symbol" aria-hidden="true">
+                        <div id="sunriseToday"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Sunset</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunset.svg" alt="Graphic: sunset symbol" aria-hidden="true">
+                        <div id="sunsetToday"></div>
+                    </div>
+                </div>
+                <br>
+                <p id="dawnToday">Dawn: </p>
+                <br>
+                <p id="duskToday">Dusk: </p>
+                <br>
+                <p id="dayLengthToday">Day Length: </p>
+                <br>
+                <p id="solarNoonToday">Solar Noon: </p>
+            </div>
+            <!-- Tomorrow's Data -->
+            <div id="tomorrow">
+                <h2>Tomorrow</h2>
+                <p id="dateTomorrow"></p>
+        
+                <div class="sun-data">
+                    <div>
+                        <h3>Sunrise</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunrise.svg" alt="Graphic: sunrise symbol" aria-hidden="true">
+                        <div id="sunriseTomorrow"></div>
+                    </div>
+        
+                    <div>
+                        <h3>Sunset</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunset.svg" alt="Graphic: sunset symbol" aria-hidden="true">
+                        <div id="sunsetTomorrow"></div>
+                    </div>
+                </div>
+                <br>
+                <p id="dawnTomorrow">Dawn: </p>
+                <br>
+                <p id="duskTomorrow">Dusk: </p>
+                <br>
+                <p id="dayLengthTomorrow">Day Length: </p>
+                <br>
+                <p id="solarNoonTomorrow">Solar Noon: </p>
+            </div>
+        </div>
+        
+        <p id="location"></p>
+        <br>
+        <p id="coordinates"></p>
+        <br>
+        <p id="timezone">Timezone: </p>
+        
+    </header>
+    <footer>
+        <p>Coordinates Data provided by <a href="https://geocode.maps.co/">Geolocation API</a></p>
+        <p> © 2023 Rupak Potdukhe</p>
+     
+        <p>Sunrisesunset Data provided by <a href="https://sunrisesunset.io/api/">Sunrise Sunset API</a></p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
